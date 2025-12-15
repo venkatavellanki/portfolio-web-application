@@ -1,23 +1,68 @@
+/* General */
 body {
     font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: #f8f9fa;
 }
 
-.hero {
-    height: 80vh;
-    background: linear-gradient(to right, #0d6efd, #6610f2);
+/* Glass Navbar */
+.glass-nav {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+}
+
+/* Hero */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.hero h1 span {
-    font-weight: bold;
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
 }
 
-.skill-box {
+.hero-title span {
+    color: #ffd166;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    opacity: 0.95;
+}
+
+/* Sections */
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Skill Cards */
+.skill-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background: #111;
+    color: #ccc;
+    text-align: center;
     padding: 20px;
-    background: #f8f9fa;
-    margin: 10px 0;
-    border-radius: 8px;
-    font-weight: 500;
 }
+
